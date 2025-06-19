@@ -1,0 +1,4 @@
+services:
+  my_module.config:
+    class: Drupal\my_module\Config
+    arguments: ['@config.factory']

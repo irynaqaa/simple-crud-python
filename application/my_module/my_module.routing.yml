@@ -1,0 +1,15 @@
+voting.upvote:
+  path: '/voting/upvote'
+  defaults:
+    _controller: '\Drupal\my_module\Controller\VotingController::vote'
+    _title: 'Upvote'
+  requirements:
+    _permission: 'access content'
+
+voting.downvote:
+  path: '/voting/downvote'
+  defaults:
+    _controller: '\Drupal\my_module\Controller\VotingController::vote'
+    _title: 'Downvote'
+  requirements:
+    _permission: 'access content'

@@ -1,0 +1,7 @@
+voting_library:
+  version: 1.x
+  js:
+    js/voting.js: {}
+  dependencies:
+    - core/jquery
+    - core/drupal.ajax

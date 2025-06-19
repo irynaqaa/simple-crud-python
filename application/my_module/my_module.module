@@ -1,0 +1,64 @@
+<?php
+
+use Drupal\Core\Form\FormBase;
+use Drupal\Core\Form\FormStateInterface;
+
+/**
+ * Implements hook_menu().
+ */
+function my_module_menu() {
+    $items = [];
+
+    $items['admin/config/my-module'] = [
+        'title' => 'API Configuration',
+        'page callback' => 'my_module_config_form',
+        'access callback' => 'user_access',
+        'access arguments' => ['administer site configuration'],
+    ];
+
+    return $items;
+}
+
+/**
+ * Configuration form for API credentials.
+ */
+function my_module_config_form($form, FormStateInterface $form_state) {
+    $config = $this->config('my_module.settings');
+
+    $form['api_key'] = [
+        '#type' => 'textfield',
+        '#title' => t('API Key'),
+        '#required' => TRUE,
+    ];
+
+    $form['api_secret'] = [
+        '#type' => 'textfield',
+        '#title' => t('API Secret'),
+        '#required' => TRUE,
+    ];
+
+    $form['api_url'] = [
+        '#type' => 'url',
+        '#title' => t('API URL'),
+        '#required' => TRUE,
+    ];
+
+    $form['actions']['#type'] = 'actions';
+    $form['actions']['submit'] = [
+        '#type' => 'submit',
+        '#value' => t('Save'),
+    ];
+
+    return $form;
+}
+
+/**
+ * Form submission handler.
+ */
+function my_module_config_form_submit($form, FormStateInterface $form_state) {
+    $config = $this->config('my_module.settings');
+    $config->set('api_key', $form_state->getValue('api_key'));
+    $config->set('api_secret', $form_state->getValue('api_secret'));
+    $config->set('api_url', $form_state->getValue('api_url'));
+    $config->save();
+}

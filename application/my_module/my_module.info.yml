@@ -1,0 +1,9 @@
+name: 'My Module'
+type: module
+description: 'A custom module for voting functionality.'
+core_version_requirement: ^10 || ^11
+package: Custom
+dependencies:
+  - drupal:ajax
+  - drupal:field
+  - drupal:views
