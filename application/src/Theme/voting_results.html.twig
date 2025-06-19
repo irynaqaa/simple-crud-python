@@ -1,0 +1,18 @@
+{#
+ * Template for displaying voting results.
+ *
+ * @var array $results
+ *   The voting results array.
+ *}
+<div class="voting-results">
+    <h2>{{ 'Voting Results'|t }}</h2>
+    {% if results is not empty %}
+        <ul>
+            {% for result in results %}
+                <li>{{ result.candidate }}: {{ result.votes }}</li>
+            {% endfor %}
+        </ul>
+    {% else %}
+        <p>{{ 'No results available.'|t }}</p>
+    {% endif %}
+</div>

@@ -1,0 +1,8 @@
+routes:
+  voting_results:
+    path: '/admin/voting/results'
+    defaults:
+      _controller: '\Application\src\Controller\VotingResultsController::build'
+      _title: 'Voting Results'
+    requirements:
+      _permission: 'administer site configuration'

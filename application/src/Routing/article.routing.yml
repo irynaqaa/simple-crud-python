@@ -1,0 +1,8 @@
+routes:
+  article_form:
+    path: '/article/form'
+    defaults:
+      _form: '\Application\src\Form\ArticleForm'
+      _title: 'Article Form'
+    requirements:
+      _permission: 'access content'}

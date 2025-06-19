@@ -1,0 +1,8 @@
+routes:
+  article.results:
+    path: '/article/results'
+    defaults:
+      _controller: '\Application\src\Controller\ArticleResultsController::results'
+      _title: 'Article Results'
+    requirements:
+      _permission: 'access content'

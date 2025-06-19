@@ -1,0 +1,37 @@
+<?php
+
+/**
+ * Implements hook_help().
+ */
+function custom_voting_module_help($route_name, $route_match) {
+  switch ($route_name) {
+    case 'help.page.custom_voting_module':
+      drupal_set_message(t('Help content for the Custom Voting Module.'));
+      break;
+  }
+}
+
+/**
+ * Implements hook_menu().
+ */
+function custom_voting_module_menu() {
+    $items = [];
+
+    $items['admin/config/custom-voting/snippets'] = [
+        'title' => 'HTML Snippets',
+        'description' => 'Manage HTML snippets for the voting module.',
+        'page callback' => 'Drupal\Core\Controller\PageController::page',
+        'access callback' => TRUE,
+        'type' => MENU_NORMAL_ITEM,
+    ];
+
+    return $items;
+}
+
+/**
+ * Implements hook_form().
+ */
+function custom_voting_module_form($form, &$form_state) {
+    $form = new \Application\src\Form\HtmlSnippetConfigForm();
+    return $form->buildForm($form, $form_state);
+}

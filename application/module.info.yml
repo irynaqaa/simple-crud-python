@@ -1,0 +1,10 @@
+name: 'Custom Voting Module'
+type: module
+description: 'A module for custom voting functionality.'
+core_version_requirement: ^10
+package: Custom
+dependencies:
+  - drupal:field
+  - drupal:node
+  - drupal:views
+  - drupal:ajax

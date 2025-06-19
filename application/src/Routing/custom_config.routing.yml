@@ -1,0 +1,8 @@
+routes:
+  custom_config_form:
+    path: '/admin/config/custom-config'
+    defaults:
+      _form: '\Application\src\Form\CustomConfigForm'
+      _title: 'Custom Configuration'
+    requirements:
+      _permission: 'administer site configuration'

@@ -1,0 +1,18 @@
+{#
+ * Template for displaying article results.
+ *
+ * @var array $results
+ *   The article results array.
+ *}
+<div class="article-results">
+    <h2>{{ 'Article Results'|t }}</h2>
+    {% if results is not empty %}
+        <ul>
+            {% for result in results %}
+                <li>{{ result.title }}: {{ result.content }}</li>
+            {% endfor %}
+        </ul>
+    {% else %}
+        <p>{{ 'No articles available.'|t }}</p>
+    {% endif %}
+</div>

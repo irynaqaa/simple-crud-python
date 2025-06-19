@@ -1,0 +1,8 @@
+routes:
+  html_snippet:
+    path: '/html/snippet'
+    defaults:
+      _controller: '\Application\src\Controller\HtmlSnippetController::build'
+      _title: 'HTML Snippet'
+    requirements:
+      _permission: 'access content'

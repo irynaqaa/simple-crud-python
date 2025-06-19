@@ -1,0 +1,12 @@
+{
+  "packages": [],
+  "packages-dev": [],
+  "minimum-stability": "stable",
+  "prefer-stable": false,
+  "prefer-lowest": false,
+  "repositories": [],
+  "config": {
+    "optimize-autoloader": true,
+    "sort-packages": true
+  }
+}
