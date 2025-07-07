@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.Pane?>
+<Pane fx:id="navigationPane" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Button fx:id="dashboardButton" layoutX="14.0" layoutY="14.0" mnemonicParsing="false" onAction="#handleDashboardButton" text="Dashboard"/>
+      <Button fx:id="transactionsButton" layoutX="93.0" layoutY="14.0" mnemonicParsing="false" onAction="#handleTransactionsButton" text="Transactions"/>
+      <Button fx:id="categoriesButton" layoutX="202.0" layoutY="14.0" mnemonicParsing="false" onAction="#handleCategoriesButton" text="Categories"/>
+      <Button fx:id="monthlySummaryButton" layoutX="293.0" layoutY="14.0" mnemonicParsing="false" onAction="#handleMonthlySummaryButton" text="Monthly Summary"/>
+   </children>
+</Pane>

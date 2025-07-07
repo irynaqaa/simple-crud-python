@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Text?>
+<VBox fx:id="transactionPane" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Label text="Amount"/>
+      <TextField fx:id="amountField"/>
+      <Label text="Category"/>
+      <ChoiceBox fx:id="categoryChoice"/>
+      <Label text="Date"/>
+      <DatePicker fx:id="dateField"/>
+      <Label text="Description"/>
+      <TextField fx:id="descriptionField"/>
+      <Label text="Type"/>
+      <ChoiceBox fx:id="typeChoice"/>
+      <Button fx:id="editButton" mnemonicParsing="false" onAction="#editTransaction" text="Edit"/>
+      <Button fx:id="deleteButton" mnemonicParsing="false" onAction="#deleteTransaction" text="Delete"/>
+      <Text fx:id="actionTarget"/>
+   </children>
+</VBox>
