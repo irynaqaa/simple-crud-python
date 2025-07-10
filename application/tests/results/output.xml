@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.3.2 (Python 3.9.23 on linux)" generated="2025-07-10T08:29:12.862900" rpa="false" schemaversion="5">
+<suite id="s1" name="Tests" source="/workspace/application/tests">
+<suite id="s1-s1" name="Categorization" source="/workspace/application/tests/categorization.robot">
+<test id="s1-s1-t1" name="Categorize Transaction" line="3">
+<kw name="Log" owner="BuiltIn">
+<arg>Categorizing a transaction</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="NOT RUN" start="2025-07-10T08:29:12.897619" elapsed="0.000218"/>
+</kw>
+<doc>This is a test case for categorizing a transaction</doc>
+<tag>categorization</tag>
+<status status="PASS" start="2025-07-10T08:29:12.896353" elapsed="0.001646"/>
+</test>
+<status status="PASS" start="2025-07-10T08:29:12.895053" elapsed="0.003460"/>
+</suite>
+<suite id="s1-s2" name="Data Export" source="/workspace/application/tests/data_export.robot">
+<test id="s1-s2-t1" name="Export Data" line="3">
+<kw name="Log" owner="BuiltIn">
+<arg>Exporting data</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="NOT RUN" start="2025-07-10T08:29:12.900818" elapsed="0.000156"/>
+</kw>
+<doc>This is a test case for exporting data</doc>
+<tag>data_export</tag>
+<status status="PASS" start="2025-07-10T08:29:12.900312" elapsed="0.000834"/>
+</test>
+<status status="PASS" start="2025-07-10T08:29:12.899070" elapsed="0.002442"/>
+</suite>
+<suite id="s1-s3" name="Reporting" source="/workspace/application/tests/reporting.robot">
+<test id="s1-s3-t1" name="Generate Report" line="3">
+<kw name="Log" owner="BuiltIn">
+<arg>Generating a report</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="NOT RUN" start="2025-07-10T08:29:12.903777" elapsed="0.000129"/>
+</kw>
+<doc>This is a test case for generating a report</doc>
+<tag>reporting</tag>
+<status status="PASS" start="2025-07-10T08:29:12.903277" elapsed="0.000771"/>
+</test>
+<status status="PASS" start="2025-07-10T08:29:12.902147" elapsed="0.002292"/>
+</suite>
+<suite id="s1-s4" name="Transaction Management" source="/workspace/application/tests/transaction_management.robot">
+<test id="s1-s4-t1" name="Create Transaction" line="3">
+<kw name="Log" owner="BuiltIn">
+<arg>Creating a transaction</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="NOT RUN" start="2025-07-10T08:29:12.906819" elapsed="0.000190"/>
+</kw>
+<doc>This is a test case for creating a transaction</doc>
+<tag>transaction</tag>
+<status status="PASS" start="2025-07-10T08:29:12.906228" elapsed="0.000917"/>
+</test>
+<status status="PASS" start="2025-07-10T08:29:12.905031" elapsed="0.002435"/>
+</suite>
+<suite id="s1-s5" name="User Interface" source="/workspace/application/tests/user_interface.robot">
+<test id="s1-s5-t1" name="Test User Interface" line="3">
+<kw name="Log" owner="BuiltIn">
+<arg>Testing the user interface</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="NOT RUN" start="2025-07-10T08:29:12.909766" elapsed="0.000085"/>
+</kw>
+<doc>This is a test case for testing the user interface</doc>
+<tag>user_interface</tag>
+<status status="PASS" start="2025-07-10T08:29:12.909290" elapsed="0.000695"/>
+</test>
+<status status="PASS" start="2025-07-10T08:29:12.908091" elapsed="0.002214"/>
+</suite>
+<status status="PASS" start="2025-07-10T08:29:12.863990" elapsed="0.047136"/>
+</suite>
+<statistics>
+<total>
+<stat pass="5" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+<stat pass="1" fail="0" skip="0">categorization</stat>
+<stat pass="1" fail="0" skip="0">data_export</stat>
+<stat pass="1" fail="0" skip="0">reporting</stat>
+<stat pass="1" fail="0" skip="0">transaction</stat>
+<stat pass="1" fail="0" skip="0">user_interface</stat>
+</tag>
+<suite>
+<stat name="Tests" id="s1" pass="5" fail="0" skip="0">Tests</stat>
+<stat name="Categorization" id="s1-s1" pass="1" fail="0" skip="0">Tests.Categorization</stat>
+<stat name="Data Export" id="s1-s2" pass="1" fail="0" skip="0">Tests.Data Export</stat>
+<stat name="Reporting" id="s1-s3" pass="1" fail="0" skip="0">Tests.Reporting</stat>
+<stat name="Transaction Management" id="s1-s4" pass="1" fail="0" skip="0">Tests.Transaction Management</stat>
+<stat name="User Interface" id="s1-s5" pass="1" fail="0" skip="0">Tests.User Interface</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

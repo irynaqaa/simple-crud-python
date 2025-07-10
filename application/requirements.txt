@@ -1,0 +1,6 @@
+python3==3.9
+sqlite3
+pylint
+pandas
+matplotlib
+tkinter
