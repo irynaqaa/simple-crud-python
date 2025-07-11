@@ -1,0 +1,19 @@
+{
+    "name": "slim/slim",
+    "description": "Slim Framework",
+    "version": "4.9.0",
+    "type": "project",
+    "autoload": {
+        "psr-4": {
+            "App\\": "app/"
+        }
+    },
+    "require": {
+        "slim/slim": "4.9.0",
+        "slim/psr7": "1.5",
+        "firebase/php-jwt": "6.2.0",
+        "phpmailer/phpmailer": "6.5.1",
+        "stripe/stripe-php": "10.10.0",
+        "monolog/monolog": "2.3.5"
+    }
+}
