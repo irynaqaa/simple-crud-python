@@ -1,0 +1,63 @@
+The software requirements specification should include the following: 
+1. Introduction: Introduce the purpose and scope of the software requirements specification.
+2. Functional Requirements: Describe the functional requirements of the software, including user interface, user experience, and accessibility.
+3. Non-Functional Requirements: Describe the non-functional requirements of the software, including performance, security, and usability.
+4. System Requirements: Describe the system requirements of the software, including hardware, software, and network requirements.
+5. Acceptance Criteria: Describe the acceptance criteria for the software, including test cases and validation procedures.
+6. Conclusion: Summarize the software requirements specification and provide recommendations for future development.
+
+Software Requirements Specification (SRS)
+Project Title: Personal Expense Tracker
+Version: 1.0
+Prepared By: [Your Name]
+Date: [Today's Date]
+
+1. Introduction
+1.1 Purpose
+This document outlines the functional and non-functional requirements for a small Java-based application that enables users to track their daily expenses, categorize them, and generate simple reports.
+1.2 Scope
+The Personal Expense Tracker is a standalone desktop application built using Java (Swing/JavaFX for UI). It helps users record their income and expenses, categorize transactions, view monthly summaries, and export data to a CSV file.
+1.3 Definitions
+* Expense: Any amount spent by the user.
+* Income: Any amount received by the user.
+* Transaction: Either an expense or income entry.
+
+2. Overall Description
+2.1 User Characteristics
+Users are general computer users with basic knowledge of desktop applications. No technical background is required.
+2.2 Assumptions and Dependencies
+* Java JDK 11 or higher must be installed.
+* The application will run on Windows/macOS/Linux.
+* SQLite will be used for local storage.
+
+3. Functional Requirements
+3.1 Add Transaction
+* Users can add a new transaction.
+* Fields: Amount, Category, Date, Description, Type (Income/Expense).
+3.2 View Transactions
+* Display all transactions in a table.
+* Allow filtering by date, category, or type.
+3.3 Edit/Delete Transaction
+* Users can update or delete any existing transaction.
+3.4 Categorization
+* Users can choose from predefined categories or create custom ones.
+3.5 Monthly Summary
+* Show total income, total expenses, and balance for a selected month.
+3.6 Export to CSV
+* Users can export transactions to a CSV file.
+
+4. Non-Functional Requirements
+4.1 Usability
+* User interface should be clean and intuitive.
+4.2 Reliability
+* Data must be saved persistently using SQLite.
+4.3 Performance
+* Should handle up to 1000 transactions smoothly.
+4.4 Portability
+* Application should be cross-platform.
+
+5. User Interface Requirements
+* Dashboard: Overview of expenses, income, and balance.
+* Navigation Bar: Links to "Add Transaction", "View All", "Reports", "Settings".
+* Forms: Input fields for new/edit transaction.
+* Tables: For listing transactions and reports.
