@@ -1,0 +1,6 @@
+Test Case 1: Add Transaction
+Test Case 2: View Transactions
+Test Case 3: Edit/Delete Transaction
+Test Case 4: Categorization
+Test Case 5: Monthly Summary
+Test Case 6: Export to CSV
