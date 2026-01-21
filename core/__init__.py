@@ -1,5 +1,13 @@
-from flask import Flask,request,render_template,url_for,redirect
+from flask import Flask
+from .routes.user import user_bp
+from .routes.students import student_bp
 
-app = Flask(__name__)
-app.config['SQLALCHEMY_DATABASE_URI']  = 'sqlite:///simple.db'
-app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = True
+
+def create_app() -> Flask:
+    app = Flask(__name__)
+    app.register_blueprint(user_bp)
+    app.register_blueprint(student_bp)
+    return app
+
+
+app: Flask = create_app()
