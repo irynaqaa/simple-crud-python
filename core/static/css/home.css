@@ -1,0 +1,12 @@
+.custom-table {
+    width: 80%;
+}
+
+.custom-header {
+    background-color: #DDDDDD;
+}
+
+/* Optional: additional styling for better spacing */
+.table {
+    margin-top: 20px;
+}

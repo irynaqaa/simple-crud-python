@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Add Data</title>
+</head>
+<body>
+{% if errors %}
+    {% for err in errors %}
+        <font color="red">{{ err }}</font><br/>
+    {% endfor %}
+    <br/>
+    <a href="javascript:self.history.back();">Go Back</a>
+{% elif success %}
+    <p><font color="green">Data added successfully!</font></p>
+    <a href="{{ url_for('student.index') }}">View Result</a>
+{% endif %}
+</body>
+</html>
