@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Submission Result</title>
+    <link rel="stylesheet" href="/static/styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Submission Result</h1>
+        <!-- Success Message -->
+        <div id="success-message" style="display: none;">
+            <h2>Success!</h2>
+            <p>Your data was added successfully.</p>
+            <a href="/main">View Results</a>
+        </div>
+        
+        <!-- Error Messages -->
+        <div id="error-messages" style="display: none;">
+            <h2>There were errors:</h2>
+            <ul id="errors-list">
+                <!-- Error messages will be populated here -->
+            </ul>
+            <a href="/form">Go back to the form</a>
+        </div>
+    </div>
+    <script>
+        // Example script to display messages based on submission status
+        const success = {{ success }}; // This would be dynamically set based on form submission result
+        const errors = {{ errors }}; // Array of error messages if any
+
+        if (success) {
+            document.getElementById('success-message').style.display = 'block';
+        } else {
+            const errorsList = document.getElementById('errors-list');
+            errors.forEach(error => {
+                const li = document.createElement('li');
+                li.textContent = error;
+                errorsList.appendChild(li);
+            });
+            document.getElementById('error-messages').style.display = 'block';
+        }
+    </script>
+</body>
+</html>

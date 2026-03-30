@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Delete User Confirmation</title>
+    <link rel="stylesheet" href="/static/styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Confirm User Deletion</h1>
+        <p>Are you sure you want to delete the user with ID: <strong>{{ user_id }} (this action cannot be undone)</strong>?</p>
+        <form action="/delete_user" method="POST" onsubmit="return confirm('Are you sure you want to delete this user?');">
+            <input type="hidden" name="user_id" value="{{ user_id }}">
+            <button type="submit">Delete User</button>
+            <a href="/users">Cancel</a>
+        </form>
+        {% if success %}
+            <div class="message success">
+                {{ success }}
+            </div>
+        {% endif %}
+        {% if error %}
+            <div class="message error">
+                {{ error }}
+            </div>
+        {% endif %}
+    </div>
+</body>
+</html>
